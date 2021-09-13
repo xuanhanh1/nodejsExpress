@@ -1,0 +1,15 @@
+const express = require('express');
+const router = express.Router();
+
+const courseController = require('../app/controller/CourseController');
+
+router.get('/update', courseController.update);
+router.delete('/:id', courseController.delete);
+router.get('/:id/delete', courseController.destroy);
+router.get('/:id/edit', courseController.edit);
+router.put('/:id', courseController.update);
+router.get('/create', courseController.create);
+router.post('/store', courseController.store);
+router.get('/:slug', courseController.show);
+
+module.exports = router;

@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="ml-4 mt-4 mr-4">
+        <h1>Khóa học của tôi</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tên khóa học</th>
+                    <th scope="col">Mô tả</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each courses}}
+                <tr>
+                    <th scope="row">{{@index}}</th>
+                    <td>{{this.name}}</td>
+                    <td>{{this.description}}</td>
+                    <td>
+                        <a href="/courses/{{this._id}}/edit" class="btn btn-link">Sửa</a>
+                        <a href="/courses/{{this._id}}/delete" class="btn btn-link">Xóa</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{{!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" class="btn btn-link" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bạn có muốn xóa khóa học này hay không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">OK. Xóa đi</button>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+<script>
+    
+
+
+</script>

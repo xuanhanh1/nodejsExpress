@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "sasstocss": "node-sass -w src/resources/sass/app.scss src/public/css/app.css --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.3",
+    "mongoose-slug-generator": "^1.0.4",
+    "nodesass": "0.0.2-security"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,12 @@
+<div class="ml-4 mt-4 mr-4">
+    <form method="POST" action="/courses/{{course._id}}/?_method=DELETE" >
+        <div class="form-group">
+            <label for="name">Tên khóa học</label>
+            <input type="text" class="form-control" value = "{{course.name}}" id="name"  name="name" >
+        </div>
+        <p>bạn có muốn xóa không?</p>
+    
+       
+        <button type="submit" class="btn btn-primary">chắc chắn </button>
+    </form>
+</div>
